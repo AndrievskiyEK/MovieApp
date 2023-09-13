@@ -1,0 +1,168 @@
+body {
+    background-color: #000;
+    color: #F3F6F9;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    margin-bottom: 45px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 790px;
+}
+
+.header__title {
+    margin-top: 80px;
+    display: flex; 
+}
+
+.header__title-movieslist, .header__title-year {
+    display: block;
+    background-color: #6532F8;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 200px;
+}
+
+.header__title-movieslist {
+    width: 183px;
+}
+
+.header__title-year {
+    width: 75px;
+}
+
+.header__watch {
+    margin-top: 20px;
+    font-size: 120px;
+    line-height: 138px;
+    letter-spacing: -4%;
+}
+
+.movies__wrapper{
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 930px;    
+    background-color: #232323;
+    border-radius: 25px;
+}
+
+.movies__form {    
+    display: flex;
+    gap: 20px;
+}
+
+.movies__form__imput{
+    width: 411px;
+    font-size: 30px;
+    line-height: 34.5px;
+    letter-spacing: -2%;
+    color: #F3F6F9;    
+    border: none;
+    border-bottom: 3px solid #3A3939;
+    background-color: #232323;
+    outline: none;
+}
+
+.movies__form-add-btn{
+    width: 62px;
+    height: 62px;
+    border-radius: 31px;
+    border: none;
+    background-color: #6532F8;
+    cursor: pointer;
+}
+
+.movies__list{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.movies__item {
+    display: flex;    
+    padding-left: 20px;
+    padding-right: 24px;
+    height: 71px;
+    border-radius: 10px;
+    background-color: #3A3939;
+    cursor: pointer;
+}
+
+.movies__item-check{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.movies__item-indication {
+    margin-top: 28px;
+    margin-right: 20px;
+    width: 19px;
+    height: 18px;
+    border-radius: 9px;
+    border: 1px solid #F3F6F9;
+    opacity: 30%;
+}
+
+.movies__item-indication-used{
+    background-color: #6532F8;
+}
+
+.movies__item-name{   
+    font-size: 20px;
+    line-height: 71px;
+    letter-spacing: -2%;
+}
+
+.movies__item-close-btn{
+    margin-left: auto;
+    margin-right: 0;
+    border: none;
+    background-color: inherit;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+
+
+/*
+
+.movies__item-box{
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.movies__item-close-btn{
+    width: 23px;
+    height: 23px;
+}
+.movies__item-checkbox{
+    width: 19px;
+    height: 19px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #F3F6F9;
+    appearance: none;
+    cursor: pointer;
+}
+.movies__item-checkbox:checked{
+    background-color: #6532F8;
+}
+.movies__item-label{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]:checked+label {
+	text-decoration: line-through;
+    color: #adadad;
+    opacity: .7;
+}
+
+*/
