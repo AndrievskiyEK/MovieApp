@@ -131,38 +131,3 @@ body {
 
 
 
-/*
-
-.movies__item-box{
-    display: flex;
-    gap: 10px;
-    padding: 0 10px;
-}
-
-.movies__item-close-btn{
-    width: 23px;
-    height: 23px;
-}
-.movies__item-checkbox{
-    width: 19px;
-    height: 19px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 1px solid #F3F6F9;
-    appearance: none;
-    cursor: pointer;
-}
-.movies__item-checkbox:checked{
-    background-color: #6532F8;
-}
-.movies__item-label{
-    display: flex;
-    align-items: center;
-}
-input[type="checkbox"]:checked+label {
-	text-decoration: line-through;
-    color: #adadad;
-    opacity: .7;
-}
-
-*/

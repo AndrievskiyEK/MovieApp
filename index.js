@@ -71,8 +71,7 @@ const render = (movieList) => {
                 movieItem.classList.add("movies__item-check");
                 movieCheckbox.classList.add("movies__item-indication-used");
                 return (movie.active);
-            }
-            
+            }            
         }) 
         console.log(movie.active); 
     });
