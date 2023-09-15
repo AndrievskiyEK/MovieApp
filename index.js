@@ -21,16 +21,16 @@ const clearInput = () => {
 
 //Функция создания объекта с наименованием фильма
 
-const createMovie = (movieName) =>{     
+const createMovie = (movieName,movieActive) =>{     
     const movie = {
         title: movieName,
-        active: false,
+        active: movieActive,
     }
-    
-    render(movieList);  
     movieList.push(movie); 
+    render(movieList);  
+    
          
-    return (movie);      
+   // return (movie);      
 }
 
 //Функция рендера
@@ -60,7 +60,7 @@ const render = (movieList) => {
         movieCloseBtn.appendChild(movieCloseBtnImg);         
 
         movieItem.addEventListener("click", function(){
-            if (movie.active == false){
+            if (movie.active === false){
                 movie.active = true;
                 movieItem.classList.remove("movies__item-check");
                 movieCheckbox.classList.remove("movies__item-indication-used");
@@ -71,9 +71,13 @@ const render = (movieList) => {
                 movieItem.classList.add("movies__item-check");
                 movieCheckbox.classList.add("movies__item-indication-used");
                 return (movie.active);
-            }            
+            }  
+                   
         }) 
+
         console.log(movie.active); 
+  
+        
     });
 }
 
