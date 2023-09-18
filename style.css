@@ -91,6 +91,11 @@ body {
     cursor: pointer;
 }
 
+.movies__form-add-btn:disabled{
+    color: #FFFFFF;
+    background-color: gray;
+}
+
 .movies__form-add-btn img {
     pointer-events: none;
 }
