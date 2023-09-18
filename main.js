@@ -1,7 +1,7 @@
 // получение данных от пользователя
 const movieInputNode = document.getElementById("moviesFormInput");
-const movieAddButtonNode = document.querySelector("#movieAddButton");
-const moviesListNode = document.querySelector("#movieslist");
+const movieAddButtonNode = document.getElementById("movieAddButton");
+const moviesListNode = document.getElementById("movieslist");
 const validationMessageNode = document.getElementById('validationMessage');
 
 let movieList = [];
@@ -111,7 +111,7 @@ function renderMovie (){
         movieCloseBtn.setAttribute("data-action", "delete");
 
         movieTitle.innerText = movie.name;
-        movieCloseBtnImg.src = "../resourses/close.png";
+        movieCloseBtnImg.src = "./resourses/close.png";
         movieCloseBtnImg.alt = "x";
 
         moviesListNode.appendChild(movieItem);
