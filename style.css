@@ -51,6 +51,20 @@ body {
     border-radius: 25px;
 }
 
+.movies{    
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.movies__validationMessage{
+    color: red;
+    padding-top: 20px;
+}
+
+.movies__validationMessage_hidden{
+    display: none;
+}
+
 .movies__form {    
     display: flex;
     gap: 20px;
@@ -77,6 +91,10 @@ body {
     cursor: pointer;
 }
 
+.movies__form-add-btn img {
+    pointer-events: none;
+}
+
 .movies__list{
     margin-top: 40px;
     display: flex;
@@ -92,6 +110,10 @@ body {
     border-radius: 10px;
     background-color: #3A3939;
     cursor: pointer;
+}
+
+.movies__item:hover{
+    background-color: #6532F8;
 }
 
 .movies__item-check{
@@ -119,13 +141,17 @@ body {
     letter-spacing: -2%;
 }
 
-.movies__item-close-btn{
+.movies__item-close-btn{    
     margin-left: auto;
     margin-right: 0;
     border: none;
     background-color: inherit;
     z-index: 99;
     cursor: pointer;
+}
+
+.movies__item-close-btn img {
+    pointer-events: none;
 }
 
 

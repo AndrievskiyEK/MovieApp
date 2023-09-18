@@ -24,75 +24,46 @@
     <main>
         <div class="movies__wrapper">
             <div class="container">
-                <div class="movies__form">
+                <form class="movies__form">
                     <input 
                     id="moviesFormInput"
                     class="movies__form__imput" 
                     type="text"
                     placeholder="Добавить фильм">
-                    <button class="movies__form-add-btn" id="movieAddButton">
-                        <img src="./resourses/arrow.png" alt="->">
+                    <button class="movies__form-add-btn" id="movieAddButton" disabled="true">
+                        <img class src="../resourses/arrow.png" alt="->">
                     </button>
-                </div>                
+                </form> 
+                <div id="validationMessage" class="movies__validationMessage">
+                    Введите наименование фильма для добавления его в список
+                </div>               
                 <div class="movies">
                     <ul class="movies__list" id="movieslist">
-                        <!--<li class="movies__item JS-movie-item">
-                            <div class="movies__item-box">
-                                <input class="movies__item-checkbox" 
-                                data-index unchecked type="checkbox">
-                                <label class="movies__item-label"
-                                for="movie__item-labe">
-                                </label>
-                            </div>
-                            <button class="movies__item-close-btn">
-                                <img src="./resourses/close.png" alt="x">
-                            </button>
-                        </li>           -->
-                        <li class="movies__item movies__item-check JS-movie-item">
+                        <!-- <li class="movies__item movies__item-check JS-movie-item" data-action="done">
                             <div class="movies__item-indication movies__item-indication-used">
                             </div>
-                            <p class="movies__item-name">
+                            <span class="movies__item-name">
                                 фильм 1
-                            </p>
-                            <button class="movies__item-close-btn">
+                            </span>
+                            <button class="movies__item-close-btn" data-action="delete">
                                 <img src="./resourses/close.png" alt="x">
                             </button>
                         </li>        
-                        <li class="movies__item JS-movie-item">
+                        <li class="movies__item JS-movie-item" data-action="done">
                             <div class="movies__item-indication movies__item-indication-used">
                             </div>
-                            <p class="movies__item-name">
+                            <span class="movies__item-name">
                                 фильм 2
-                            </p>
-                            <button class="movies__item-close-btn">
+                            </span>
+                            <button class="movies__item-close-btn" data-action="delete">
                                 <img src="./resourses/close.png" alt="x">
                             </button>
-                        </li>      
-                        <li class="movies__item JS-movie-item">
-                            <div class="movies__item-indication movies__item-indication-used">
-                            </div>
-                            <p class="movies__item-name">
-                                фильм 3
-                            </p>
-                            <button class="movies__item-close-btn">
-                                <img src="./resourses/close.png" alt="x">
-                            </button>
-                        </li>                                         
-                        <li class="movies__item JS-movie-item">
-                            <div class="movies__item-indication movies__item-indication-used">
-                            </div>
-                            <p class="movies__item-name">
-                                фильм 4
-                            </p>
-                            <button class="movies__item-close-btn">
-                                <img src="./resourses/close.png" alt="x">
-                            </button>
-                        </li>      
+                        </li>     --> 
                     </ul>
                 </div>
             </div>    
         </div>
     </main>    
-    <script src="./index.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
